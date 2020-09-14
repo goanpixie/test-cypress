@@ -19,7 +19,7 @@ describe('Form test', () => {
     cy.route({
       url: "/users/**",
       method: "POST",
-      response: { status: "Saved", code: 201 }
+      response: { status: "Form Saved!", code: 201 }
     });
 
     cy.get("form").submit();
